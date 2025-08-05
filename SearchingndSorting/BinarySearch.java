@@ -10,7 +10,8 @@ public class BinarySearch {
 
         int num = s.nextInt();
 
-        int l=0;
+        int l=0;   
+        
         int r= Arr.length-1;
 
         while(l<0){
