@@ -1,8 +1,6 @@
 package Methods;
 
 public class method_Overload {
-
-
     // two rules should be used in method overloading  
     // 1. Parameters should be different .
     //2. the data type should be different.

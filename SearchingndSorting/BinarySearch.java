@@ -13,9 +13,8 @@ public class BinarySearch {
         int l=0;   
         
         int r= Arr.length-1;       
-        
 
-        while(l<0){
+        while(l<=r){
             int mid =(l+r)/2;
 
             if(mid==num){
