@@ -10,7 +10,7 @@ public class recursionFactorial {
          int output = n*smallOutput;    
          return output;
     }
-
+   
     public static void main(String[] args) {
         System.out.print(fact(5));
     }
