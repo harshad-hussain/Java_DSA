@@ -6,7 +6,7 @@ public class BinarySearch {
     public static int main(String[] args) {
         
         Scanner s = new Scanner(System.in);
-        int Arr[] = {1,2,3,4,5,6,7,8,9,10};
+        int Arr[] = {1,2,11,4,5,3,7,8,9,10};
 
         int num = s.nextInt();
 
@@ -17,14 +17,14 @@ public class BinarySearch {
         while(l<=r){
             int mid =(l+r)/2;
 
-            if(mid==num){
+            if(Arr[mid]==num){
                 return mid;
             }
             else if(mid>num){
                r= mid-1;
             }
             else{
-                r=mid+1;
+                l=mid+1;
             }
         }
         return -1;

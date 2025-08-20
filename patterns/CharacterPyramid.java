@@ -22,7 +22,6 @@ public class CharacterPyramid {
 
             char second = (char)(jthchar-2);
                       
-
             for(int k=N/2;k<=i-1;k++){
                 System.out.print(second);
                 second--;
