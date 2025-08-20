@@ -9,6 +9,8 @@ public class replacePi {
         if(s.charAt(0) == 'p' && s.charAt(1) =='i'){
             String smallOutput = replacehelper(s.substring(2));
             return "3.14" + smallOutput;
+
+            
         } else {
             String smallOutput = replacehelper(s.substring(1));
             return s.charAt(0)+ smallOutput;

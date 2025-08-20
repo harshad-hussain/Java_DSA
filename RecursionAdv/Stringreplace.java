@@ -9,9 +9,9 @@ public class Stringreplace {
 
         String smalloutput = replaceHelper(str.substring(1), c1, c2);
 
-        if(str.charAt(0) == c1){
+        if(str.charAt(0) == c1){   
             return  c2 + smalloutput;
-        }
+        }  
         else{
             return  str.charAt(0) + smalloutput;
         }
