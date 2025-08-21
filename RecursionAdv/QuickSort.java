@@ -10,6 +10,7 @@ public class QuickSort {
                 smallerCount++;
             }
         }
+        
         int temp = Arr[si+smallerCount];
         Arr[si+smallerCount] = pivotElement;
         Arr[si] = temp;
