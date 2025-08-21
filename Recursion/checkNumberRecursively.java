@@ -10,7 +10,8 @@ public class checkNumberRecursively {
         }
         if(input[startIndex]==x){
             return true;
-        }else{
+        }
+        else{
            return isHelper(input,x, startIndex+1);
         }
 
