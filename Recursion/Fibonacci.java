@@ -7,7 +7,7 @@ public class Fibonacci {
           if(n==1 || n==2){
             return 1;
           }
-
+    
           // Hypothesis
            int fib_n_1 = fibo(n-1);
           int fib_n_2 = fibo(n-2);
