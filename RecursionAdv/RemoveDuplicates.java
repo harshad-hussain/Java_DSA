@@ -8,13 +8,12 @@ public class RemoveDuplicates {
             return "";
         }
         String smallOutput = helper(str, startIndex+1);
-
         if(startIndex > 0 && str.charAt(startIndex) ==str.charAt(startIndex-1)){
             return smallOutput;
         }
         else{
-            return str.charAt(startIndex ) + smallOutput;
-        }
+             return str.charAt(startIndex ) + smallOutput;
+            }
 
     }
     public static void main(String[] args) {

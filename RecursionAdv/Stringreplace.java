@@ -18,7 +18,6 @@ public class Stringreplace {
 
     }
     public static void main(String[] args) {
-        
         String output = replaceHelper("Harajaia", 'a', 'x');
         System.out.print( output);
     }

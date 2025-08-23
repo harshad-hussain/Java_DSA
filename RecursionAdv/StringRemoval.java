@@ -6,13 +6,11 @@ public class StringRemoval {
               if(str.length() ==0){
                 return str;
               }
-
               String smallOutput = removechar(str.substring(1), c);
-
               if(str.charAt(0) == c){
                      return smallOutput;
               }
-              else{
+              else{   
                  return str.charAt(0) + smallOutput;
               }
     }
