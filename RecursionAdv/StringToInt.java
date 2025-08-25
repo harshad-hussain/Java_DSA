@@ -11,8 +11,8 @@ public class StringToInt {
 
         int smallAns = StringHelper(input.substring(0, input.length()-1 ));
         int lastDigit = input.charAt(input.length()-1) - '0';
-        int result = smallAns *10 + lastDigit;
-
+        int result =  smallAns *10 + lastDigit;
+                    
         return result;
     }        
     public static void main(String[] args) {
