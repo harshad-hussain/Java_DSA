@@ -14,7 +14,7 @@ public class StringToInt {
         int result = smallAns *10 + lastDigit;
 
         return result;
-    }
+    }        
     public static void main(String[] args) {
           int result2=    StringHelper("00021030");
          System.out.println(result2);

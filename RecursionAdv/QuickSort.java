@@ -5,6 +5,7 @@ public class QuickSort {
     public static int partition(int[] Arr,int si,int ei){
         int pivotElement = Arr[si];
         int smallerCount =0;
+
         for(int i=si+1;i<=ei;i++){
             if(Arr[i]<pivotElement){
                 smallerCount++;
@@ -42,7 +43,6 @@ public class QuickSort {
            int pivotIndex = partition(Arr,si,ei);
            QuickSort(Arr,si,pivotIndex-1);
            QuickSort(Arr,pivotIndex+1,ei);
-
     }
 
     public static void main(String[] args) {

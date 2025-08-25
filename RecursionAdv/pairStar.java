@@ -5,14 +5,12 @@ public class pairStar {
         if(str.length() == 1){
             return str;
         }
-
         String rest = helper(str.substring(1 ) );
             if(str.charAt(0) == rest.charAt(0) ){
             return str.charAt(0) +"*"+ rest;
-        }else{
+        } else{
             return str.charAt(0)+ rest;
         }
-
     }
     public static void main(String[] args) {
         String str = "hellollw";
