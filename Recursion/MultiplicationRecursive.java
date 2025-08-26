@@ -6,8 +6,8 @@ public class MultiplicationRecursive {
             return 0;
          }
 
-         int total = m + mul(m,n-1);
-         return total;
+         int ans = m +mul(n-1,m);
+         return ans;
     }
     public static void main(String[] args) {
         int result = mul(4, 6);
