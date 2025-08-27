@@ -10,7 +10,7 @@ public class Student {
       public Student(String name){
         this.name = name;
         numStudents++;
-        this.rollNo = numStudents;
+        this.rollNo = numStudents;    
       }
      public int getrollNo(){
         return rollNo;  
