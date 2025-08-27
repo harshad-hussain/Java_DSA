@@ -14,6 +14,7 @@ public class stringcontain {
             }
             i++;
         }
+        
         if(j==str2.length()){
             System.out.println("yes");
         }
