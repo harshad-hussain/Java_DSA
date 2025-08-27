@@ -8,11 +8,11 @@ public class Student {
         return rollNo; 
      }
 
-     public void setrollNo(int num){
-        if(num <= 0){
+     public void setrollNo(int rollNo){
+        if(rollNo <= 0){
             return;
         }
-        rollNo = num;
+        this.rollNo = rollNo;
      }
 
 
