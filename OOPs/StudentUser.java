@@ -7,12 +7,12 @@ public class StudentUser {
 
         // s1.name ="Harshad";
         // s1.setrollNo(20);
-
-        System.out.println(s1.name + " " + Student.numStudents+ " " + s1.dateofBirthReturn());
+           
+        System.out.println(s1.name + " " + Student.getStudentCount()  + " " + s1.dateofBirthReturn() );
 
         // s2.name = "Hussain";
         // s2.setrollNo(40);
-        System.out.println(s2.name+ " "+ s2.getrollNo() );
+        System.out.println(s2.name+ " "+  " " +  Student.getStudentCount() + "  " + s2.getrollNo() );
 
         
 
