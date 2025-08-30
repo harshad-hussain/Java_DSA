@@ -3,7 +3,7 @@ package OOPs;
 public class Student {
      public  String name;
       private int rollNo;
-      final static double DateofBirth = 18.04;
+      final static double DateofBirth = 18.04;              
       private static int numStudents;
 
       

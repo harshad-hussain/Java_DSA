@@ -5,9 +5,11 @@ public class Course {
        private int CourseId;
 
        public Course(int CourseId,String CourseName){
+
         this.CourseId = CourseId;
         this.CourseName = CourseName;
-       }
+       
+     }
 
        
        public Course(String CourseName){
