@@ -9,8 +9,10 @@ public class FractionUser {
     Fraction f2 = new Fraction(5, 10);
     f2.print();
 
+    
     f1.add(f2);
     f1.print();
+
 
     Fraction f3 = Fraction.add(f1, f2);
     f3.print();
