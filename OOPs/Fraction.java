@@ -27,14 +27,7 @@ public class Fraction {
         denominator = denominator/gcd;
     }
 
-    public void increment(){
-         numerator = numerator+denominator;
-         simplify();
-    }
-
-    public int add(){  
-        
-    }
+    
 
 
 
