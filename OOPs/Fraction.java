@@ -32,7 +32,7 @@ public class Fraction {
          simplify();
     }
 
-    public int add(){
+    public int add(){  
         
     }
 
