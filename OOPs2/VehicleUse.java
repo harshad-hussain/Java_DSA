@@ -13,7 +13,10 @@ public class VehicleUse {
         c1.setColor("Blue");
         c1.speed =130;
         c1.nodoors=4;
-        c1.print();
+        c1.print(); 
+        c1.printMaxSpeed();
+        
+
         
 
         bicycle b1 = new bicycle();

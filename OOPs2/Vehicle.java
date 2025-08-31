@@ -5,7 +5,6 @@ public class Vehicle {
     int speed ;
     private String color ;
 
-
     public void print(){
         System.out.println(" Base class Speed is" + speed + " color is " + color );
     }
