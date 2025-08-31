@@ -4,7 +4,7 @@ public class bicycle extends Vehicle {
     
     String brand ;
 
-     public void printBicycle(){
+     public void print(){
         System.out.println("The bicycle Speed is" + speed + " color is " + getColor() + " the brand is" + brand );
     }
 }

@@ -13,12 +13,13 @@ public class VehicleUse {
         c1.setColor("Blue");
         c1.speed =130;
         c1.nodoors=4;
-        c1.printCar();
+        c1.print();
+        
 
         bicycle b1 = new bicycle();
         b1.setColor("White");
         b1.speed =40;
         b1.brand = " Hercules";
-        b1.printBicycle();
+        b1.print();
     }
 }
