@@ -8,13 +8,10 @@ public class XtoPowerofN {
         }
             int total = x * sol(x , n-1);
             return total;
-
     }
-
     public static void main(String[] args) {
         int n = 4;
         int x= 4;
-          
         System.out.print(sol(4, 4));
         
     }
