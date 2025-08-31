@@ -6,7 +6,7 @@ public class DynamicArray {
     private int nextElementIndex;
 
     public DynamicArray(){
-         data = new int[5];
+         data = new int[5];   
          nextElementIndex  =0;
     }
 
