@@ -1,10 +1,10 @@
 package Generics;
 
-public class Pair <T>{
+public class Pair <T,S>{
     private T first;
-    private T second;
+    private S second;
 
-    public Pair(T first,T second){
+    public Pair(T first,S second){
         this.first= first;
         this.second = second;
     }
@@ -17,11 +17,11 @@ public class Pair <T>{
         this.first = first;
     }
 
-       public T getSecond(){
+       public S getSecond(){
         return second;
     }
 
-    public void setSecond(T second){
+    public void setSecond(S second){
         this.second = second;
     }
 
