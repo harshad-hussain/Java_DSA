@@ -18,4 +18,6 @@ public abstract  class Vehicle {
     }
 
     public abstract boolean isMotorized();
+
+    // public abstract String getCompanyName();
 }

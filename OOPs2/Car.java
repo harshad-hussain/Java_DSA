@@ -1,6 +1,6 @@
 package OOPs2;
 
-public class Car extends Vehicle {
+public  class Car extends Vehicle {
       int nodoors;
       int speed;
       
@@ -16,7 +16,7 @@ public class Car extends Vehicle {
     public boolean isMotorized(){
       return true;
     }
-    
+
 
 
 }

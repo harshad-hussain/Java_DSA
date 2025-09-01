@@ -17,7 +17,7 @@ public class VehicleUse {
         v= new bicycle();
         System.out.println(v.isMotorized());
         
-        Car c1= new Car();
+        // Car c1= new Car();
        
 
         // c1.setColor("Blue");
