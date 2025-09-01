@@ -7,7 +7,7 @@ public class ManUse {
 
           son s= (son)m; // this is class cast exception will come we are explicitly declaring the derived class object to super class
 
-          Object o = new Vehicle(); //object class is super class of all the derived classes 
+        //   Object o = new Vehicle(); //object class is super class of all the derived classes 
           
           m.print();
           m2.print();   

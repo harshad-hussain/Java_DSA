@@ -11,4 +11,12 @@ public class Car extends Vehicle {
     public void printMaxSpeed(){
             System.out.println( speed + " " + super.speed);
     }
+
+    @Override
+    public boolean isMotorized(){
+      return true;
+    }
+    
+
+
 }

@@ -1,6 +1,6 @@
 package OOPs2;
 
-public class Vehicle {
+public abstract  class Vehicle {
     
     int speed ;
     private String color ;
@@ -16,4 +16,6 @@ public class Vehicle {
     public void setColor(String color){
         this.color = color;
     }
+
+    public abstract boolean isMotorized();
 }

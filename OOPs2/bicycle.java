@@ -7,4 +7,10 @@ public class bicycle extends Vehicle {
      public void print(){
         System.out.println("The bicycle Speed is" + speed + " color is " + getColor() + " the brand is" + brand );
     }
+
+     @Override
+     public boolean isMotorized() {
+       return false;
+     }
+
 }
