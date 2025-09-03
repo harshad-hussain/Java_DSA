@@ -5,7 +5,6 @@ public class son extends Man{
 
     public son(int num){
         this.age = num;
-
     }
 
     public void print(){

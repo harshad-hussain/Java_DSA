@@ -3,16 +3,16 @@ package Arrays.Arrays2;
 import java.util.Scanner;
 
 public class ArrayRotate1 {
-       public static void main(String[] args) {
+          public static void main(String[] args) {
           Scanner s = new Scanner(System.in);
           System.out.print("Enter the size of the array : ");
           int size = s.nextInt();
           int Arr[]= new int[size];
-
+        
           int B[] = new int[size];
-
-          for(int i =0;i<size;i++){
-            System.out.print("Enter the element at "+ i + "index :");
+        
+           for(int i =0;i<size;i++){
+                    System.out.print("Enter the element at "+ i + "index :");
            Arr[i] = s.nextInt();
           }
 
@@ -33,7 +33,6 @@ public class ArrayRotate1 {
                 B[(i-x+size) % size] = Arr[i];
             }
           }
-
           for(int i:Arr){
             System.out.print( i + " ");
           }
@@ -42,7 +41,5 @@ public class ArrayRotate1 {
           for(int i:B){
             System.out.print(i + " ");
           }
-
-
        }
 }

@@ -10,7 +10,6 @@ public class Pairuse {
     System.out.println(outer.getFirst().getFirst());
     System.out.println(outer.getFirst().getSecond());
     System.out.println(outer.getSecond());
-     
     
 
     // Pair <String ,Integer> p = new Pair<>("ab",10);
