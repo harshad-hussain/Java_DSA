@@ -1,5 +1,7 @@
 package TicTacToe;
 
+import java.util.Scanner;
+
 public class TicTacToe {
     public static void main(String[] args) {
         TicTacToe t = new TicTacToe();
@@ -11,4 +13,6 @@ public class TicTacToe {
         //create the board
         // play the game
     }
+
+  
 }
