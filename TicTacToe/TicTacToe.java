@@ -13,12 +13,11 @@ public class TicTacToe {
         TicTacToe t = new TicTacToe();
         t.startGame();
     }
-    
 
     public void startGame(){
         //take player input
         Scanner s = new Scanner(System.in);
-        player1 = takPlayerInput(++numPlayers);
+        player1 = takPlayerInput(++numPlayers); 
         player2 = takPlayerInput(++numPlayers);
           while(player1.getSymbol() == player2.getSymbol()){
             System.out.println("Enter the symbol again , Symbol is already taken :");
@@ -61,7 +60,7 @@ public class TicTacToe {
 
             player1Turn = !player1Turn;
                 board.print();
-                
+
         }
 
         if(status == Board.PLAYER1WINS){
