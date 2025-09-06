@@ -27,9 +27,10 @@ public class TicTacToe {
         //create the board
         board = new Board(player1.getSymbol(),player2.getSymbol());
         // play the game
-
+         int status = Board.INCOMPLETE ;
         boolean player1Turn = true;
-        while(){
+       
+        while(status == Board.INCOMPLETE || status == Board.INVALIDMOVE){
             if(player1Turn){
                 System.out.println("Player - 1 turn "+ player1.getName() + "`s turn");
                 System.out.println("Enter x :");
@@ -37,18 +38,53 @@ public class TicTacToe {
                 System.out.println("Enter Y :");
                 int y = s.nextInt();
 
-                board.move(player1.getSymbol(),x,y);
-                
+                  status =  board.move(player1.getSymbol(),x,y);
+               if(status == Board.INVALIDMOVE){
+                System.out.println("Invalid move ! please try again !");
+                continue;
+               }
+
+            }else{
+                System.out.println("Player - 2 turn "+ player2.getName() + "`s turn");
+                System.out.println("Enter x :");
+                int x = s.nextInt();
+                System.out.println("Enter Y :");
+                int y = s.nextInt();
+
+             status = board.move(player2.getSymbol(), x, y);
+
+             if(status == Board.INVALIDMOVE){
+                System.out.println("Inavlid move ! please try again");
+                continue;
+             }
             }
+
+            player1Turn = !player1Turn;
+                board.print();
+                
+        }
+
+        if(status == Board.PLAYER1WINS){
+            System.out.println("Player 1 wins " + player1.getName() + "Wins !");
+        }else if(status == Board.PLAYER2WINS){
+            System.out.println("Player 1 wins " + player2.getName() + "Wins !");
+        }
+        else{
+            System.out.println("The match is draw");
         }
     }
 
+    public Board move(char symbol , int x , int y){
+
+    }
+
+
     public Player takPlayerInput(int num){
         Scanner s = new Scanner(System.in);
-        System.out.println("Enter Player " + num + "name :");
-        String name = s.nextLine();
-        System.out.println("Enter Player " + num + " Symbol ");
-        char symbol = s.next().charAt(0);
+    System.out.println("Enter Player " + num + "name :");
+    String name = s.nextLine();
+    System.out.println("Enter Player " + num + " Symbol ");
+    char symbol = s.next().charAt(0);
         Player p = new Player(name, symbol);
          return p;
 

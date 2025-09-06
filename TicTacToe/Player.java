@@ -8,7 +8,7 @@ public class Player {
         setName(name);
         setSymbol(symbol);
 
-    }
+}
 
     public void setName(String name){
         if(!name.isEmpty()){
