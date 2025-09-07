@@ -17,7 +17,7 @@ public class ArrayZerotoEnd2 {
         int Arr[] = new int[size];
         
         for(int i =0;i<size;i++){
-            System.out.print("Enter the element at"         + i +  "index : ");
+            System.out.print("Enter the element at" + i +  "index : ");
             Arr[i] = s.nextInt();
         }
            int Zero =0 ; 
