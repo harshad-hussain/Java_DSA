@@ -37,7 +37,7 @@ public class TicTacToe {
                 System.out.println("Enter Y :");
                 int y = s.nextInt();
 
-                  status =  board.move(player1.getSymbol(),x,y);
+                  status =  board.Move(player1.getSymbol(),x,y);
                if(status == Board.INVALIDMOVE){
                 System.out.println("Invalid move ! please try again !");
                 continue;
@@ -50,7 +50,7 @@ public class TicTacToe {
                 System.out.println("Enter Y :");
                 int y = s.nextInt();
 
-             status = board.move(player2.getSymbol(), x, y);
+             status = board.Move(player2.getSymbol(), x, y);
 
              if(status == Board.INVALIDMOVE){
                 System.out.println("Inavlid move ! please try again");
@@ -73,9 +73,7 @@ public class TicTacToe {
         }
     }
 
-    public Board move(char symbol , int x , int y){
-
-    }
+  
 
 
     public Player takPlayerInput(int num){
