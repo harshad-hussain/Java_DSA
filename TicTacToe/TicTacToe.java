@@ -22,7 +22,7 @@ public class TicTacToe {
           while(player1.getSymbol() == player2.getSymbol()){
             System.out.println("Enter the symbol again , Symbol is already taken :");
             player2.setSymbol(s.next().charAt(0));
-          }
+          }                       
         //create the board
         board = new Board(player1.getSymbol(),player2.getSymbol());
         // play the game

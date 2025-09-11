@@ -8,7 +8,7 @@ public class Board {
 
     private int count;
     private  static final char EMPTY =  ' ' ;
-   public static final int PLAYER1WINS = 1;
+    public static final int PLAYER1WINS = 1;
     public static final int PLAYER2WINS = 2;
     public static final int DRAW = 3;
     public static final int INCOMPLETE  = 4;
