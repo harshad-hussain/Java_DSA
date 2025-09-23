@@ -18,6 +18,12 @@ public class ArrayListDemo {
             System.out.print(arr.get(i) +" ");
         }
 
+        //Enchanced for and forEach loop 
+          
+        for(int i:arr){
+            System.out.println(i+ " ");
+        }
+
 
     }
 }
