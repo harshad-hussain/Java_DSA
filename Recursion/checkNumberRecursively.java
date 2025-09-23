@@ -4,6 +4,7 @@ public class checkNumberRecursively {
     public static boolean checkNumber(int input[],int x){
            return isHelper(input, x, 0);
     }
+    
     public static boolean isHelper(int input[],int x,int startIndex){
         if(startIndex == input.length){
             return  false;

@@ -6,7 +6,6 @@ public class ComplexNumber {
 
     private int imaginaryNum;
 
-    
 
     public ComplexNumber(int realNum, int imaginaryNum){
           this.realNum =realNum;

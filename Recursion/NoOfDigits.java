@@ -10,11 +10,9 @@ public class NoOfDigits {
             return 0;
         }
         int count =0;
-
-        count = 1+ digit(n/10);
+        count = 1+ digit(n/ 10);
         return count;
     }
-
 
     public static void main(String[] args) {
         System.out.print(digit(123));

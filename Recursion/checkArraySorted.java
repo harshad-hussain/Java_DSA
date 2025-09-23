@@ -7,12 +7,12 @@ public class checkArraySorted {
             return true;
           }
           if(A[startIndex]>A[startIndex+1]){
-            return false;
+            return false;           
           }
           boolean isSorted = helper(A,startIndex+1);
           return isSorted;
         }
-    public static void main(String[] args) {
+      public static void main(String[] args) {
         int startIndex =0;
 
         int A[] = {1,2,0,5,7};

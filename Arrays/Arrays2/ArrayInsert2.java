@@ -9,7 +9,7 @@ public class ArrayInsert2 {
         System.out.print(str);
 
         int num = s.nextInt();
-        return num;
+        return num; 
     }
 
     public static void insert(int Arr[],int pos, int ele,int size){

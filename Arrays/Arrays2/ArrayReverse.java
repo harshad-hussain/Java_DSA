@@ -13,7 +13,7 @@ public class ArrayReverse {
     public static void reverse(int Arr[]){
          int l = 0;
          int r = Arr.length-1;
-
+        
          while(l<r){
             swap(Arr,l,r);
             l++;

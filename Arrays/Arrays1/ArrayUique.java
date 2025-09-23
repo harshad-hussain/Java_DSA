@@ -16,7 +16,7 @@ public class ArrayUique {
 
              }
 
-               if(count==1){
+               if(count==1){  
                 System.out.print(arr[i] + " ");
             }
             }
