@@ -40,7 +40,6 @@ public class InsertNode {
             temp = temp.next;
             count++;
         }
-
         if(temp==null){
             return head;
         }
