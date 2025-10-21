@@ -49,6 +49,8 @@ public class InsertNode {
         return head;
     }
 
+
+
        public static void printLinkedList(Node<Integer> head){
             while(head != null){
                 System.out.print(head.data + " ");
