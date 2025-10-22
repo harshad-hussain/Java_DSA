@@ -2,6 +2,8 @@ package LinkedList;
 
 import java.util.Scanner;
 
+import javax.swing.event.InternalFrameAdapter;
+
 import Recursion.printNatural;
 
 public class InsertNode {
@@ -49,6 +51,26 @@ public class InsertNode {
         return head;
     }
 
+    public static Node<Integer> deleteNode(Node<Integer> head ,int pos){
+        int count =0;
+        if(pos ==0){
+            return head.next;
+        }else{
+             Node<Integer> temp = head;
+
+            while(count < pos-1  && temp != null){
+                temp = temp.next;
+                count ++;
+            }
+            if(temp == null || temp.next ==null){
+                return head;
+            }
+            temp.next = temp.next.next;
+        }
+
+        return head;
+
+    }
 
 
        public static void printLinkedList(Node<Integer> head){
@@ -62,7 +84,12 @@ public class InsertNode {
       public static void main(String[] args) {
         Node<Integer> head = takeInput();
 
-        insertNode(head, 2, 55);
+      //  insertNode(head, 2, 55);
+
+      printLinkedList(head);
+
+      head = deleteNode(head, 2);
+
         printLinkedList(head);
 
     }
