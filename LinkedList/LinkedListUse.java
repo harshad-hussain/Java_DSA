@@ -39,7 +39,7 @@ import javax.imageio.ImageIO;
         public static Node<Integer> takeInput(){
             Scanner s = new Scanner(System.in);
             int data = s.nextInt();
-             Node <Integer> head = null;
+             Node <Integer> head = null; 
              Node<Integer> tail = null;
              while (data != -1) {
                 Node<Integer> currentNode = new Node<Integer>(data);

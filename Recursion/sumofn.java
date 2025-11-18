@@ -6,7 +6,6 @@ public class sumofn {
         if(n==0){
             return 0;
         }
-
         int smallOutput = sumn(n-1);
         int total = n+smallOutput;
         return total;

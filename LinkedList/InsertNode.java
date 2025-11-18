@@ -29,26 +29,51 @@ public class InsertNode {
        return head;
     }
 
+    // public static Node<Integer> insertNode(Node<Integer> head,int pos,int data){
+    //     int count =0;
+    //     Node<Integer> insertNode = new Node<Integer>(data);
+    //     if(pos==0){
+    //         insertNode.next = head;
+    //         head = insertNode;
+    //     }else{
+    //         Node<Integer> temp = head;
+        
+    //     while(count < pos-1 && temp != null){
+    //         temp = temp.next;
+    //         count++;
+    //     }
+    //     if(temp==null){
+    //         return head;
+    //     }
+    //     insertNode.next = temp.next;
+    //     temp.next = insertNode;
+    // }
+    //     return head;
+    // }
+
     public static Node<Integer> insertNode(Node<Integer> head,int pos,int data){
         int count =0;
         Node<Integer> insertNode = new Node<Integer>(data);
-        if(pos==0){
+
+        if(pos == 0){
             insertNode.next = head;
             head = insertNode;
         }else{
             Node<Integer> temp = head;
-        
-        while(count < pos-1 && temp != null){
-            temp = temp.next;
-            count++;
+
+            while(count < pos -1 && temp != null){
+                temp = temp.next;
+                count++;
+            }
+            
+            if(temp ==null){
+                return head;
+            }
+            insertNode.next = temp.next;
+            temp.next = insertNode;    
         }
-        if(temp==null){
-            return head;
-        }
-        insertNode.next = temp.next;
-        temp.next = insertNode;
-    }
-        return head;
+      return head;
+
     }
 
     public static Node<Integer> deleteNode(Node<Integer> head ,int pos){
@@ -71,8 +96,7 @@ public class InsertNode {
         return head;
 
     }
-
-
+    
        public static void printLinkedList(Node<Integer> head){
             while(head != null){
                 System.out.print(head.data + " ");
@@ -81,7 +105,7 @@ public class InsertNode {
             System.out.println();
         }
 
-      public static void main(String[] args) {
+        public static void main(String[] args) {
         Node<Integer> head = takeInput();
 
       //  insertNode(head, 2, 55);
