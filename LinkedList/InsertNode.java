@@ -29,27 +29,6 @@ public class InsertNode {
        return head;
     }
 
-    // public static Node<Integer> insertNode(Node<Integer> head,int pos,int data){
-    //     int count =0;
-    //     Node<Integer> insertNode = new Node<Integer>(data);
-    //     if(pos==0){
-    //         insertNode.next = head;
-    //         head = insertNode;
-    //     }else{
-    //         Node<Integer> temp = head;
-        
-    //     while(count < pos-1 && temp != null){
-    //         temp = temp.next;
-    //         count++;
-    //     }
-    //     if(temp==null){
-    //         return head;
-    //     }
-    //     insertNode.next = temp.next;
-    //     temp.next = insertNode;
-    // }
-    //     return head;
-    // }
 
     public static Node<Integer> insertNode(Node<Integer> head,int pos,int data){
         int count =0;
@@ -114,7 +93,7 @@ public class InsertNode {
 
       head = deleteNode(head, 2);
 
-        printLinkedList(head);
+    printLinkedList(head);
 
     }
 }
