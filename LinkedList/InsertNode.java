@@ -71,9 +71,7 @@ public class InsertNode {
             }
             temp.next = temp.next.next;
         }
-
         return head;
-
     }
     
        public static void printLinkedList(Node<Integer> head){
