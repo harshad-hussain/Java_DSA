@@ -10,7 +10,7 @@ public class ArrayReverse {
         Arr[r]= temp;
   }
 
-    public static void reverse(int Arr[]){
+    public static void reverse(int Arr[]){    
          int l = 0;
          int r = Arr.length-1;
         

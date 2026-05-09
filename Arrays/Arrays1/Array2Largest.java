@@ -12,8 +12,8 @@ public class Array2Largest {
 
          int arr[] = new int[size];
 
-         int Largest = arr[0];
-         int secondLargest = 0;
+         int Largest = Integer.MIN_VALUE;
+         int secondLargest = Integer.MIN_VALUE;
 
          for(int i=0;i<=size-1;i++){
             System.out.print("Enter the element : " );
@@ -24,7 +24,7 @@ public class Array2Largest {
               if(arr[j]>Largest){
                   secondLargest = Largest;
                   Largest = arr[j];
-                  arr[j] = Integer.MIN_VALUE;
+             
               }
               else if(arr[j]>secondLargest && arr[j]!=Largest){
                 secondLargest = arr[j];
