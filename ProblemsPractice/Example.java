@@ -1,15 +1,37 @@
 import java.util.Scanner;
 
-class Example{
+public class Example{
 
-    public static void Main(String[] args){
+     String name;
+     int id;
+    int salary;
 
-        Scanner s = new Scanner(System.in);
-        int age = s.nextInt();
-
-        if(age > 18 && age< 60){
-            System.out.println(" age is correct");
-        }
+     Example(String name,int id, int salary){
+     this.name = name;
+     this.id =id;
+     this.salary = salary;  
     }
+
+    public  void getDetails(){
+        System.out.println(" the name is " + name + " and id is " +  id );
+    }
+
+    public static void main(String[] args){
+     
+      Example e1 = new Example("Harsh",101,2000);
+
+      Example e2 = new Example("Kiran",534,8908);
+
+
+      e1.getDetails();
+      e2.getDetails();
+
+        
+       
+    
+
+     
+     
+     }    
 
 }
