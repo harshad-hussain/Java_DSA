@@ -1,0 +1,5 @@
+interface AtmTransaction {
+
+    void display();
+    
+}
