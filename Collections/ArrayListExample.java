@@ -26,7 +26,10 @@ public class ArrayListExample{
 
          System.out.println(List1.contains(200));
 
-         Collections.sort(List1);
+         Collections.sort(List1);   
+         System.out.println(List1);
+
+         List1.clear();
          System.out.println(List1);
         
 
